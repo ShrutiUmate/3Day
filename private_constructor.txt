@@ -1,0 +1,18 @@
+using System;
+public class counter
+{
+	private counter()
+	{
+	}
+
+}
+
+public class Program  
+{  
+public  static void Main()  
+{
+		 Console.WriteLine("Private COnstructor");
+		   Console.WriteLine();
+	
+}
+}

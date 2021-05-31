@@ -1,0 +1,39 @@
+using System;
+
+public class Student
+{
+	public int stud_rollno;
+	public string stud_name;
+	public  Student(Student stud1)
+	{
+	stud_rollno=stud1.stud_rollno;
+	stud_name=stud1.stud_name;	
+	}
+
+	public Student(int stud_rollno,string stud_name)//parameterized constructor
+	{
+		this.stud_rollno=stud_rollno;
+		this.stud_name=stud_name;
+	}
+
+public 	void PrintStudDetails()
+{
+	
+		Console.WriteLine("student details are:");
+		Console.WriteLine("student roll no: "+stud_rollno);
+		Console.WriteLine("student name is "+stud_name);
+	}
+
+}
+
+public class Program  
+{  
+public  static void Main()  
+{
+		  Student stud1=new Student(21,"anagha");//object
+		   Student stud2=new Student(stud1);
+
+		  stud2.PrintStudDetails();
+	
+}
+}

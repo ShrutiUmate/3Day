@@ -1,0 +1,21 @@
+using System;
+
+public class animal
+{
+	public string eats="eat";
+}
+public class dog:animal
+{
+public string barks ="bark";
+}
+public class Program  
+{  
+public  static void Main()  
+{
+		   dog d1= new dog();
+		
+		 Console.WriteLine("dog can "+d1.eats+" and "+d1.barks);
+		   Console.WriteLine();
+	
+}
+}
